@@ -1,7 +1,8 @@
-var buttonMode = document.querySelector(".button")
+var buttonMode = document.querySelectorAll(".button")
 
-function buttonMode(){
-    alert(this + ": clicked")
+// add event listener to each button
+for (var i = 0; i < buttonMode.length; i++) {
+    buttonMode[i].addEventListener("click", function () {
+        alert("clicked")
+    });
 };
-
-alert("Connected");
